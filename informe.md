@@ -52,7 +52,7 @@ Cada clase aporta 750 imágenes oficiales de entrenamiento y 250 de test. Con ra
 
 Las imágenes se cargaron a 224 × 224 píxeles, en lotes de 32, mediante image_dataset_from_directory, con caché y prefetch. La categoría Torta corresponde específicamente a chocolate_cake, por lo que su alcance no incluye automáticamente cualquier tipo de torta.
 
-<img src="Pictures/10000001000003190000032C798B07B8.png" style="width:13.462cm;height:13.785cm" />
+<img src="images/10000001000003190000032C798B07B8.png" style="width:13.462cm;height:13.785cm" />
 
 Figura 1. Ejemplos de imágenes del conjunto de entrenamiento.
 
@@ -85,15 +85,15 @@ La CNN mostró sobreajuste: la accuracy de entrenamiento subió hasta 87,8% mien
 
 El modelo final obtuvo 1.097 aciertos de 1.250 (87,76%). Que test supere validación podría relacionarse con el ruido del conjunto de entrenamiento de Food-101, del que procede validación, pero esa explicación no fue comprobada experimentalmente.
 
-<img src="Pictures/1000000100000635000001B8DCD056AC.png" style="width:15.875cm;height:4.396cm" />
+<img src="images/1000000100000635000001B8DCD056AC.png" style="width:15.875cm;height:4.396cm" />
 
 Figura 2. Evolución de accuracy de los tres entrenamientos.
 
-<img src="Pictures/1000000100000635000001B86A576FB9.png" style="width:15.875cm;height:4.396cm" />
+<img src="images/1000000100000635000001B86A576FB9.png" style="width:15.875cm;height:4.396cm" />
 
 Figura 3. Evolución de loss de los tres entrenamientos.
 
-<img src="Pictures/10000001000002BC000001B22F66630B.png" style="width:15.875cm;height:9.843cm" />
+<img src="images/10000001000002BC000001B22F66630B.png" style="width:15.875cm;height:9.843cm" />
 
 Figura 4. Accuracy conjunta de transfer learning y fine-tuning; la línea marca el cambio de etapa.
 
@@ -112,7 +112,7 @@ Precision indica qué proporción de predicciones de una clase fueron correctas;
 
 ## 5.2 Matriz de confusión
 
-<img src="Pictures/100000010000021B000001B0649B3925.png" style="width:13.462cm;height:10.79cm" />
+<img src="images/100000010000021B000001B0649B3925.png" style="width:13.462cm;height:10.79cm" />
 
 Figura 5. Matriz de confusión del modelo final sobre el test oficial.
 
