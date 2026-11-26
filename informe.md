@@ -359,7 +359,7 @@ Aunque el mayor accuracy de validación se obtuvo en la época nueve, el criteri
 
 ### 7.1. Accuracy
 
-![Curva de Accuracy de Vision Transformer](pictures/vit/accuracy.png)
+![Curva de Accuracy de Vision Transformer](images/vit/accuracy.png)
 
 *Figura: Evolución del accuracy durante el entrenamiento y la validación.*
 
@@ -373,7 +373,7 @@ La diferencia creciente entre ambas curvas constituye un indicio de sobreajuste 
 
 ### 7.2. Loss
 
-![Curva de Loss de Vision Transformer](pictures/vit/loss.png)
+![Curva de Loss de Vision Transformer](images/vit/loss.png)
 
 *Figura: Evolución de la función de pérdida durante el entrenamiento y la validación.*
 
@@ -428,7 +428,7 @@ Esto indica que, cuando el modelo predice que una imagen corresponde a una tarta
 
 ## 9. Matriz de confusión
 
-![Matriz de confusión de Vision Transformer](pictures/vit/matriz_confusion.png)
+![Matriz de confusión de Vision Transformer](images/vit/matriz_confusion.png)
 
 *Figura: Matriz de confusión obtenida sobre el conjunto de prueba.*
 
@@ -465,7 +465,8 @@ Para cada imagen se presentó:
 
 Se seleccionaron seis ejemplos correctos y seis incorrectos para facilitar el análisis visual de ambos casos.
 
-![Predicciones de Vision Transformer](pictures/vit/predicciones.png)
+![Predicciones de Vision Transformer](images/vit/predicciones.png)
+![Predicciones de Vision Transformer](images/vit/incorrectas.png)
 
 *Figura: Ejemplos de clasificaciones correctas e incorrectas.*
 
@@ -499,7 +500,7 @@ $$
 N = \left(\frac{224}{16}\right)^2 = 196
 $$
 
-![Visualización de patches](pictures/vit/patches.png)
+![Visualización de patches](images/vit/patches.png)
 
 *Figura: Representación de una imagen de cupcake dividida en 196 patches.*
 
@@ -524,7 +525,7 @@ El procedimiento realizado consistió en:
 5. Redimensionar y normalizar el mapa obtenido.
 6. Superponer el mapa de calor sobre la imagen original.
 
-![Attention Map de Vision Transformer](pictures/vit/attention_map.png)
+![Attention Map de Vision Transformer](images/vit/attention_map.png)
 
 *Figura: Visualización de los pesos de atención del último bloque Transformer.*
 
@@ -556,7 +557,7 @@ El procedimiento realizado fue:
 6. Extraer la atención acumulada del token CLS.
 7. Generar un mapa de calor sobre la imagen original.
 
-![Attention Rollout de Vision Transformer](pictures/vit/attention_rollout.png)
+![Attention Rollout de Vision Transformer](images/vit/attention_rollout.png)
 
 *Figura: Visualización de la atención acumulada a través de los 12 bloques Transformer.*
 
@@ -601,7 +602,7 @@ Con el objetivo de evaluar el aporte de Vision Transformer al proyecto, se compa
 | MobileNetV2 + Fine-Tuning | 83,9 % | 83,7 % | 87,76 % |
 | **Vision Transformer** | **97,7 %** | **94,7 %** | **96,72 %** |
 
-![Comparación de accuracy entre modelos](pictures/vit/comparacion_accuracy.png)
+![Comparación de accuracy entre modelos](images/vit/comparacion_accuracy.png)
 
 *Figura: Comparación del accuracy de validación y prueba de las configuraciones implementadas.*
 
@@ -659,7 +660,7 @@ Para analizar si la mejora fue generalizada o se concentró en determinadas cate
 
 *pp: puntos porcentuales.*
 
-![Comparación de recall por categoría](pictures/vit/comparacion_recall.png)
+![Comparación de recall por categoría](images/vit/comparacion_recall.png)
 
 *Figura: Comparación del rendimiento por categoría entre MobileNetV2 con fine-tuning y Vision Transformer.*
 
